@@ -8,7 +8,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  console.log('hello fromr oot')
   return (
     <html lang="en">
       {/*

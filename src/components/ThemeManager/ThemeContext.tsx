@@ -19,6 +19,7 @@ export const ThemeContext = createContext<ContextValue>({
 
 export const ThemeContextProvider = ({ children }: Props ) => {
     const [currentTheme, setCurrentTheme] = useState<Theme>(Themes[0]);
+    console.log('=== current theme', currentTheme);
     const [contextState, setContextState] = useState<ContextValue>({
         theme: currentTheme,
         setTheme: (theme: Theme) => setContextState({

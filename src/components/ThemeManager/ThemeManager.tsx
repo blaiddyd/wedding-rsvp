@@ -3,12 +3,13 @@
 import React, { useContext, useState } from "react";
 import { ThemeContext } from "./ThemeContext";
 import { ThemeOption, Themes } from "./themes";
+import styles from './theme-manager.module.css';
 
 export const ThemeManager = () => {
     const { theme, setTheme } = useContext(ThemeContext);
 
     const setThemeCallback = () => {
-        console.log('chaging theme!!')
+        console.log('chaging theme!!');
         const themeId = theme.name as ThemeOption;
         switch(themeId) {
             case 'age-of-stars':
@@ -22,15 +23,15 @@ export const ThemeManager = () => {
     }
 
     return (
-        <div className="headline">
-            <span className="headline-border">
+        <div className={styles.headline}>
+            <span className={styles["headline-border"]}>
             ╔═══*.·:·.✧    ✦    ✧.·:·.*═══╗
             </span>
             <h1 id="main-title">Ekin & Oskar start the Age of Stars!</h1>
-            <button id="theme-button" onClick={() => setThemeCallback()}>
+            <button id={styles["theme-button"]} onClick={() => setThemeCallback()}>
                 <span>Change Theme</span>
             </button>
-            <span className="headline-border">
+            <span className={styles["headline-border"]}>
             ╚═══*.·:·.✧    ✦    ✧.·:·.*═══╝
             </span>
         </div>
