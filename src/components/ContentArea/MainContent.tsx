@@ -26,7 +26,7 @@ export const MainContent = () => {
             </span>
         </div>
         {
-            window?.innerWidth > 600 &&
+            window && window.innerWidth > 600 &&
             <div className={styles.gifCentral}>
                 <Image src="https://media.tenor.com/I8RGJtJhbQ8AAAAi/ranni-ranni-the-witch.gif" height={200} width={200} alt="ranni jammin"/>
             </div>
