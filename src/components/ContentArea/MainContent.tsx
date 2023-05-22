@@ -21,13 +21,7 @@ export const MainContent = () => {
             <span>Ceremony starts at 4:30pm</span> 
             <a href="https://goo.gl/maps/MUSP7UsSTut2tt6r8" target="_blank" rel="noreferrer">The Guilford Hotel</a>
             <span>
-                RSVP with
-            </span>
-            <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=MmRnOWxqMmM1NmtzbnQ5ajU3MGJ1NGdvajYgNzZlNTA4MjAwZDBjZGRlOGZkNmVkZWM1NzVhMjM4MjAyNjlkYjRlODdjNGU1YzM4MDkzMTRmZGQxNDQ3NmY5ZUBn&amp;tmsrc=76e508200d0cdde8fd6edec575a23820269db4e87c4e5c3809314fdd14476f9e%40group.calendar.google.com" rel="noreferrer">
-                <img src="https://www.google.com/calendar/images/ext/gc_button1_en.gif" alt="calendar invite" />    
-            </a>
-            <span>
-                Or let Ekin/Oskar know ( ˘͈ ᵕ ˘͈♡)
+               Save the date and RSVP by letting Ekin/Oskar know <span id={styles.special}>₍ᐢ. ̫ .ᐢ₎</span>
             </span>
         </div>
         {
