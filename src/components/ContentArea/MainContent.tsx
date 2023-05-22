@@ -1,12 +1,15 @@
 'use client';
 
 import React from "react";
+import Image from "next/image";
 import styles from "./content-area.module.css"
 
 export const MainContent = () => {
+
+
     return <div className={styles.mainContent}>
          <div className={styles.gifCentral}>
-            <img src="https://media.tenor.com/I8RGJtJhbQ8AAAAi/ranni-ranni-the-witch.gif" height="200px" width="200px" alt="ranni jammin"/>
+            <Image src="https://media.tenor.com/I8RGJtJhbQ8AAAAi/ranni-ranni-the-witch.gif" height={200} width={200} alt="ranni jammin"/>
         </div>
         <div className={styles.eventDetails}>
             <span>September 23rd, 2023</span>
@@ -16,11 +19,17 @@ export const MainContent = () => {
                 RSVP with
             </span>
             <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NG1sdnI1Y3B0OTJmOWNzNGxvZWgxYXVsMnIgNzZlNTA4MjAwZDBjZGRlOGZkNmVkZWM1NzVhMjM4MjAyNjlkYjRlODdjNGU1YzM4MDkzMTRmZGQxNDQ3NmY5ZUBn&amp;tmsrc=76e508200d0cdde8fd6edec575a23820269db4e87c4e5c3809314fdd14476f9e%40group.calendar.google.com" rel="noreferrer">
-                <img src="https://www.google.com/calendar/images/ext/gc_button1_en.gif" alt="calendar invite" />
+                <img src="https://www.google.com/calendar/images/ext/gc_button1_en.gif" alt="google calendar event" />
             </a>
+            <span>
+                Or let Ekin/Oskar know ( ˘͈ ᵕ ˘͈♡)
+            </span>
         </div>
-        <div className={styles.gifCentral}>
-            <img src="https://media.tenor.com/I8RGJtJhbQ8AAAAi/ranni-ranni-the-witch.gif" height="200px" width="200px" alt="ranni jammin"/>
-        </div>
+        {
+            window?.innerWidth > 600 &&
+            <div className={styles.gifCentral}>
+                <Image src="https://media.tenor.com/I8RGJtJhbQ8AAAAi/ranni-ranni-the-witch.gif" height={200} width={200} alt="ranni jammin"/>
+            </div>
+        }
     </div>
 }

@@ -1,5 +1,6 @@
 'use client'
 import styles from './page.module.css'
+import Image from 'next/image'
 import { useContext, useEffect, useState } from 'react'
 import { ThemeContext } from '@/components/ThemeManager/ThemeContext'
 import RootLayout from './layout'
@@ -8,19 +9,19 @@ import { MainContent } from '@/components/ContentArea/MainContent'
 
 export default function Home() {
   const { theme } = useContext(ThemeContext);
-  const [background, setBackground] = useState<string>(theme.background);
-  
-  useEffect(() => {
-    if (window) {
-      setBackground(window.innerWidth < 600 ? theme.mobileBackground : theme.background);
-    }
-  }, []);
 
   return (
     <RootLayout>
       <div className={styles.background}>
-        <video autoPlay loop height="100%" width="100%" src={background}>
-        </video>
+        <div style={{width: '100%', height: '100%', position: 'relative'}}>
+          <Image src={theme.background}  
+            fill
+            alt='Maiden achieved'
+            style={{
+              objectFit: 'cover'
+            }}
+          />
+        </div>
       </div>
       <div className={styles.overlay}></div>
       <div className={styles["cute-stars"]}></div>
