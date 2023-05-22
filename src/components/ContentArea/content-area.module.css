@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+.mainContent {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    flex-direction: column;
+    margin: auto;
+    width: 500px;
+    height: 750px;
+    position: relative;
+
+    font-family: 'Mate SC', serif;
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainContent {
+        margin-top: 200px;
+        width: 150px;
+        height: 100%;
+    }
+} 
+
+.eventDetails {
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: white;
+}
+
+
+
+.gifCentral {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px 0;
+}
