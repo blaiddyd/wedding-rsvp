@@ -1,11 +1,16 @@
 'use client';
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./content-area.module.css"
 
 export const MainContent = () => {
-
+   const [renderMoreRanni, setRenderMoreRanni] = useState(false); 
+    useEffect(() => {
+        if (window && window.innerWidth >= 600 ) {
+            setRenderMoreRanni(true);
+        }
+    }, []);
 
     return <div className={styles.mainContent}>
          <div className={styles.gifCentral}>
@@ -26,7 +31,7 @@ export const MainContent = () => {
             </span>
         </div>
         {
-            window && window.innerWidth > 600 &&
+            renderMoreRanni &&
             <div className={styles.gifCentral}>
                 <Image src="https://media.tenor.com/I8RGJtJhbQ8AAAAi/ranni-ranni-the-witch.gif" height={200} width={200} alt="ranni jammin"/>
             </div>
