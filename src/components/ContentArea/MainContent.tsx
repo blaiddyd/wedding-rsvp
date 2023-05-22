@@ -10,7 +10,7 @@ export const MainContent = () => {
         </div>
         <div className={styles.eventDetails}>
             <span>September 23rd, 2023</span>
-            <span>Ceremony starts at 4:30pm</span>
+            <span>Ceremony starts at 4:30pm</span> 
             <a href="https://goo.gl/maps/MUSP7UsSTut2tt6r8" target="_blank" rel="noreferrer">The Guilford Hotel</a>
             <span>
                 RSVP with
