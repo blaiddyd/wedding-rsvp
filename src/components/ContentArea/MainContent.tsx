@@ -16,7 +16,7 @@ export const MainContent = () => {
         <div className={styles.eventMenu}>
             <a href="https://forms.gle/LSBJj7z3SyG5Cemp9" target="_blank" rel="noreferrer">RSVP Form</a>
             <a href="https://docs.google.com/spreadsheets/d/1RoNXxjH4DT6deTgqhhufyPnTurj7XNtKsPajBkWgzfA/edit?usp=sharing" target="_blank" rel="noreferrer">Gift Registry</a>
-            <a href="https://open.spotify.com/playlist/25n2C4GAuCm3GI2cSrThOo?si=e41b712bba5a4ce5&pt=8b49375ed9ea99d059e2214dc9706610" target="_blank" rel="noreferrer">Spotify Playlist</a>
+            <a href="https://open.spotify.com/playlist/25n2C4GAuCm3GI2cSrThOo?si=35fafcd796a24e5c&pt=74f2168ad743f4a83e65e3668d79c94e" target="_blank" rel="noreferrer">Spotify Playlist</a>
         </div>
          <div className={styles.gifCentral}>
             <Image src="https://media.tenor.com/I8RGJtJhbQ8AAAAi/ranni-ranni-the-witch.gif" height={200} width={200} alt="ranni jammin"/>
